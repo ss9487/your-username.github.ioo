@@ -1,113 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>單頁式網站</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #444;
-            padding: 0.5rem 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background: #555;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .hero {
-            background: #f4f4f4;
-            padding: 5rem 2rem;
-        }
-
-        .about {
-            background: #e2e2e2;
-        }
-
-        .services {
-            background: #ccc;
-        }
-
-        .contact {
-            background: #bbb;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>歡迎來到我的單頁式網站</h1>
-        <p>由丁文龍創建</p>
-    </header>
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <div id="board" class="board">
+      <div class="cell" data-cell="0"></div>
+      <div class="cell" data-cell="1"></div>
+      <div class="cell" data-cell="2"></div>
+      <div class="cell" data-cell="3"></div>
+      <div class="cell" data-cell="4"></div>
+      <div class="cell" data-cell="5"></div>
+      <div class="cell" data-cell="6"></div>
+      <div class="cell" data-cell="7"></div>
+      <div class="cell" data-cell="8"></div>
+    </div>
+    <div id="message"></div>
+    <button id="resetBtn">Restart Game</button>
+  </div>
 
-    <nav>
-        <a href="#hero">首頁</a>
-        <a href="#about">關於我們</a>
-        <a href="#services">服務項目</a>
-        <a href="#contact">聯絡我們</a>
-    </nav>
-
-    <section id="hero" class="hero">
-        <h2>主題區域</h2>
-        <p>這是網站的主題區域，用於介紹您的網站。</p>
-    </section>
-
-    <section id="about" class="about">
-        <h2>關於我們</h2>
-        <p>了解更多關於我們是誰以及我們做什麼。</p>
-        <p>我的興趣包括玩遊戲、看漫畫和看動畫。</p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>我們的服務</h2>
-        <p>探索我們為客戶提供的服務。</p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>聯絡我們</h2>
-        <p>如需更多信息，請與我們聯繫。</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 單頁式網站。保留所有權利。由丁文龍創建</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
